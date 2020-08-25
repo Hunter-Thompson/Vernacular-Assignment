@@ -15,6 +15,7 @@ docker run -it vernacular
 ## Delete files older than 2 days
 
 ```sh
+#Run as root, because it needs to create /var/log folder. Otherwise it does not need root permissions.
 ./audio.sh
 ```
 The logs are stored in /var/log/audio-deletion/.
@@ -43,8 +44,8 @@ cat: /etc/redhat-release: No such file or directory
 cpu cores       : 4
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/sys/firmware/dmi/tables/smbios_entry_point: Permission denied
-/dev/mem: Permission denied
+        Max Speed: 8300 MHz
+        Current Speed: 3400 MHz
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Architecture:                    x86_64
@@ -61,6 +62,21 @@ Memory:  7843.7 mb
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /dev/sda4: UUID="8ee8c863-84bc-4a6d-8b83-952a1b273d7b" TYPE="swap" PARTUUID="e0a53986-8130-4255-9664-4e57515632ba"
 /dev/sda2: UUID="78283bce-dd7c-43f9-8c41-d692cd93383d" TYPE="ext4" PARTUUID="833ab8a9-e0c5-4072-bc43-1fcfaca97c23"
+/dev/loop0: TYPE="squashfs"
+/dev/loop1: TYPE="squashfs"
+/dev/loop2: TYPE="squashfs"
+/dev/loop3: TYPE="squashfs"
+/dev/loop4: TYPE="squashfs"
+/dev/loop5: TYPE="squashfs"
+/dev/loop6: TYPE="squashfs"
+/dev/loop7: TYPE="squashfs"
+/dev/sda1: UUID="f96a2a16-2faa-4d3f-ae5b-9a9a1ad387ed" TYPE="ext4" PARTUUID="76d31972-8144-7040-8139-79408a4ff70b"
+/dev/sda3: UUID="B36B-370B" TYPE="vfat" PARTLABEL="EFI System Partition" PARTUUID="ff345169-e6bf-4ca9-970f-9cd5365b074d"
+/dev/loop8: TYPE="squashfs"
+/dev/loop9: TYPE="squashfs"
+/dev/loop10: TYPE="squashfs"
+/dev/loop11: TYPE="squashfs"
+/dev/loop12: TYPE="squashfs"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
